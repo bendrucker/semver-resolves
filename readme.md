@@ -12,7 +12,7 @@ $ npm install --save semver-resolves
 ## Usage
 
 ```js
-var resolves = require('semver-resolves');=
+var resolves = require('semver-resolves')
 resolves.range('>2 <4') // => true
 resolves.range('<2 >4') // => false
 ```
