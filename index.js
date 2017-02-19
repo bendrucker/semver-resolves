@@ -25,9 +25,17 @@ function intersectsPrevious (current, index, comparators) {
   }
   // duplicates are ok (2.0.0 2.0.0)
   if (!current.operator && !previous.operator) return true
+
+  // opposite ranges don't overlap unless they're >=/<=
+  if (current.operator && previous.operator && current.operator.charAt(0) !== previous.operator.charAt(0)) {
+    if (![previous, current].every(hasEquals)) return false
+  }
+
   // otherwise at least one must be >= or <=
   // > and < do not intersect
-  return [previous, current].some(function (comparator) {
-    return ~comparator.operator.indexOf('=')
-  })
+  return [previous, current].some(hasEquals)
+}
+
+function hasEquals (comparator) {
+  return ~comparator.operator.indexOf('=')
 }

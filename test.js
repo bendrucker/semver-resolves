@@ -15,6 +15,9 @@ test(function (t) {
   t.notOk(resolves.range('>=2 <1'))
   t.notOk(resolves.range('>2 <=1'))
 
+  t.notOk(resolves.range('>=2 <2'))
+  t.notOk(resolves.range('>2 <2'))
+
   t.ok(resolves.range('<2 >4 || 5'))
   t.notOk(resolves.range('<2 >4 || <4 >5'))
 
