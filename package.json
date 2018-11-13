@@ -1,7 +1,7 @@
 {
   "name": "semver-resolves",
   "main": "index.js",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Test whether a semver range resolves",
   "license": "MIT",
   "repository": "bendrucker/semver-resolves",
