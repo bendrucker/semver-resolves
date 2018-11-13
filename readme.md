@@ -1,4 +1,4 @@
-# semver-resolves [![Build Status](https://travis-ci.org/bendrucker/semver-resolves.svg?branch=master)](https://travis-ci.org/bendrucker/semver-resolves)
+# semver-resolves [![Build Status](https://travis-ci.org/bendrucker/semver-resolves.svg?branch=master)](https://travis-ci.org/bendrucker/semver-resolves) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/semver-resolves.svg)](https://greenkeeper.io/)
 
 > Test whether a semver range can possibly be satisfied
 
