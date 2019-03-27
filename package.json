@@ -22,8 +22,8 @@
     "resolve"
   ],
   "dependencies": {
-    "is-comparator-valid": "^1.0.0",
-    "semver": "^5.3.0",
+    "is-comparator-valid": "^1.1.2",
+    "semver": "^6.0.0",
     "sort-semver-comparators": "^1.0.0"
   },
   "devDependencies": {

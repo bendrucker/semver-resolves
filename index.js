@@ -21,7 +21,7 @@ function intersectsPrevious (current, index, comparators) {
   if (previous.semver.version !== current.semver.version) {
     // versions are not the same
     // test that each version passes the other's comparator
-    return previous.test(current.semver) && current.test(previous.semver)
+    return previous.test(current.semver.toString()) && current.test(previous.semver.toString())
   }
   // duplicates are ok (2.0.0 2.0.0)
   if (!current.operator && !previous.operator) return true
